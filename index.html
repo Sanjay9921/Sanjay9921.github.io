@@ -2,296 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone Project 2 - Personal Site</title>
+    <title>Sanjay Prabhu - Personal Portfolio</title>
 
-    <!--Boostrap 5.3.0 CSS CDN-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/styles.css" class="rel">
 
-    <!--External CSS-->
-    <link rel="stylesheet" href="./css/style.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/fc89a457df.js" crossorigin="anonymous"></script>
+
 </head>
-
 <body>
-  
-  <!--Home-->
-  <section id="home">
-    <header>
-      <div class="px-3 py-2 home-navbar-bg">
+    <!-- ---------------------------HOME--------------------------- -->
+    <div id="header">
         <div class="container">
-          <!--Navbar-->
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-
-              <!--Resume-->
-              <a class="navbar-brand d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="bi bi-file-earmark-pdf-fill me-2" viewBox="0 0 16 16" role="img" aria-label="Resume">
-                  <use xlink:href="#resume"></use>
-                  <path d="M5.523 12.424c.14-.082.293-.162.459-.238a7.878 7.878 0 0 1-.45.606c-.28.337-.498.516-.635.572a.266.266 0 0 1-.035.012.282.282 0 0 1-.026-.044c-.056-.11-.054-.216.04-.36.106-.165.319-.354.647-.548zm2.455-1.647c-.119.025-.237.05-.356.078a21.148 21.148 0 0 0 .5-1.05 12.045 12.045 0 0 0 .51.858c-.217.032-.436.07-.654.114zm2.525.939a3.881 3.881 0 0 1-.435-.41c.228.005.434.022.612.054.317.057.466.147.518.209a.095.095 0 0 1 .026.064.436.436 0 0 1-.06.2.307.307 0 0 1-.094.124.107.107 0 0 1-.069.015c-.09-.003-.258-.066-.498-.256zM8.278 6.97c-.04.244-.108.524-.2.829a4.86 4.86 0 0 1-.089-.346c-.076-.353-.087-.63-.046-.822.038-.177.11-.248.196-.283a.517.517 0 0 1 .145-.04c.013.03.028.092.032.198.005.122-.007.277-.038.465z"/>
-                  <path fill-rule="evenodd" d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM4.165 13.668c.09.18.23.343.438.419.207.075.412.04.58-.03.318-.13.635-.436.926-.786.333-.401.683-.927 1.021-1.51a11.651 11.651 0 0 1 1.997-.406c.3.383.61.713.91.95.28.22.603.403.934.417a.856.856 0 0 0 .51-.138c.155-.101.27-.247.354-.416.09-.181.145-.37.138-.563a.844.844 0 0 0-.2-.518c-.226-.27-.596-.4-.96-.465a5.76 5.76 0 0 0-1.335-.05 10.954 10.954 0 0 1-.98-1.686c.25-.66.437-1.284.52-1.794.036-.218.055-.426.048-.614a1.238 1.238 0 0 0-.127-.538.7.7 0 0 0-.477-.365c-.202-.043-.41 0-.601.077-.377.15-.576.47-.651.823-.073.34-.04.736.046 1.136.088.406.238.848.43 1.295a19.697 19.697 0 0 1-1.062 2.227 7.662 7.662 0 0 0-1.482.645c-.37.22-.699.48-.897.787-.21.326-.275.714-.08 1.103z"/>
-                </svg>
-                My Resume
-              </a>
-
-              <!--Toggle-->
-              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <!--Navigation List-->
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav justify-content-center text-small ms-auto">
-                  <li>
-                    <a class="nav-link active" aria-current="page" href="#home">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-door-fill d-block me-auto mb-1 invisibility svg-center" viewBox="0 0 16 16">
-                        <use xlink:href="#home"></use>
-                        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
-                      </svg>
-                      Home
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#about" class="nav-link">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle d-block me-auto mb-1 invisibility svg-center" viewBox="0 0 16 16">
-                        <use xlink:href="#about"></use>
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                      </svg>
-                      About
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#education" class="nav-link">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-mortarboard-fill d-block me-auto mb-1 invisibility svg-center" viewBox="0 0 16 16">
-                        <use xlink:href="#education"></use>
-                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
-                        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
-                      </svg>
-                      Education
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#experience" class="nav-link">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-pc-display-horizontal d-block me-auto mb-1 invisibility svg-center" viewBox="0 0 16 16">
-                        <use xlink:href="#experience"></use>
-                        <path d="M9.186 4.797a2.42 2.42 0 1 0-2.86-2.448h1.178c.929 0 1.682.753 1.682 1.682v.766Zm-4.295 7.738h2.613c.929 0 1.682-.753 1.682-1.682V5.58h2.783a.7.7 0 0 1 .682.716v4.294a4.197 4.197 0 0 1-4.093 4.293c-1.618-.04-3-.99-3.667-2.35Zm10.737-9.372a1.674 1.674 0 1 1-3.349 0 1.674 1.674 0 0 1 3.349 0Zm-2.238 9.488c-.04 0-.08 0-.12-.002a5.19 5.19 0 0 0 .381-2.07V6.306a1.692 1.692 0 0 0-.15-.725h1.792c.39 0 .707.317.707.707v3.765a2.598 2.598 0 0 1-2.598 2.598h-.013Z"/>
-                        <path d="M.682 3.349h6.822c.377 0 .682.305.682.682v6.822a.682.682 0 0 1-.682.682H.682A.682.682 0 0 1 0 10.853V4.03c0-.377.305-.682.682-.682Zm5.206 2.596v-.72h-3.59v.72h1.357V9.66h.87V5.945h1.363Z"/>
-                      </svg>
-                      Experience
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#projects" class="nav-link">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-file-earmark-code-fill d-block me-auto mb-1 invisibility svg-center" viewBox="0 0 16 16">
-                        <use xlink:href="#projects"></use>
-                        <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"/>
-                      </svg>
-                      Projects
-                    </a>
-                  </li>
+            <nav>
+                <img src="images/new-logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-              </div>
+            </nav>
+
+            <div class="header-text">
+                <p>Aspiring Software Developer in A.I.</p>
+                <h1>Hi, I'm <span>Sanjay Prabhu</span><br>from India.</h1>
             </div>
-          </nav>
         </div>
-      </div>
+    </div>
 
-      <!--Background-->
-      <div class="home-bg">
-        <div class="px-4 py-5 text-center">
-          <h1 class="display-5 fw-bold text-white">Hello! I am Sanjay Prabhu</h1>
-          <div class="col-lg-6 mx-auto text-white">
-            <p class="lead mb-4">I love to code and binge <span class="home-bg-text"><a href="#"><u>literally me</u></a></span> movies on the weekends.</p>
-          </div>
-        </div>
-      </div>
-    </header>
-  </section>
+    <!-- ---------------------------ABOUT--------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am an aspiring Software Engineer with a goal to develop leading products for Big Data and Cloud Applications.</p>
 
-  <!--About-->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
 
-  <!--Education-->
-  <section id="education">
-    <div class="container px-4 py-5" id="education">
-      <h2 class="pb-2 border-bottom">Education</h2>
-      <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-            <img src="./images/manipal.jpg" alt="twbs" width="45px" height="38px" class="rounded-circle flex-shrink-0">
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <h6 class="mb-0">Manipal Institute of Technology</h6>
-                <small class="opacity-50 text-nowrap">B.Tech in Computer Science Engineering</small>
-                <p class="mb-0 opacity-75">
-                  <ul>
-                    <li>4 Year Bachelors Course</li>
-                    <li>Major in Computer Science</li>
-                    <p class="opacity-50">
-                      Data Structures, Algorithms, Database Management, Operating Systems, Computer Networks
-                    </p>
-                    <li>Minor in Intelligent Systems</li>
-                    <p class="opacity-50">
-                      Machine Learning, Artificial Intelligence, Social Network Analysis, Natural Language Processing
-                    </p>
-                  </ul>
-                </p>
-              </div>
-              <small class="opacity-50 text-nowrap">[2017-2021]</small>
+                    <!--SKILLS-->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Data Science</span><br>
+                                Python, SQL, Power Automate
+                            </li>
+                            <li>
+                                <span>Business Intelligence</span><br>
+                                Power BI, Tableau
+                            </li>
+                            <li>
+                                <span>Misc Programming Languages</span><br>
+                                JAVA, C++
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--EXPERIENCE-->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Aug'2021 - Present</span><br>
+                                Framework Engineer at Quantiphi Analytics
+                            </li>
+                            <li>
+                                <span>Jan'2021 - Aug'2021</span><br>
+                                Framework Engineer Intern at Quantiphi Analytics
+                            </li>
+                            <li>
+                                <span>Aug'2020 - Sep'2020</span><br>
+                                Intern at Schneider Electric
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--EDUCATION-->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2017-2021</span><br>
+                                B.Tech Computer Science & Engineering at Manipal Institute of Technology
+                            </li>
+                            <li>
+                                <span>2015-2017</span><br>
+                                Grade XI<sup>th</sup> and XII<sup>th</sup> at Sri Chaitanya Junior College
+                            </li>
+                            <li>
+                                <span>-2015</span><br>
+                                Grade X<sup>th</sup> at Amrita Vidyalayam
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </a>
         </div>
-      </div>
     </div>
-  </section>
 
-  <!--Experience-->
-  <section id="experience">
-    <div class="container px-4 py-5" id="featured-3">
-      <h2 class="pb-2 border-bottom">Professional Experience</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="feature col">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-            <img src="./images/q.png" class="bi" width="80px" height="80px">
-          </div>
-          <h3 class="fs-2 text-body-emphasis">Quantiphi Analytics</h3>
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <h4 class="fs-5">Framework Engineer</h4>
-          <small class="opacity-50 text-nowrap">[Aug'21-Present]</small>
-          </div>
-          <p class="mb-0 opacity-75">
-            <ul>
-              <li>Worked as a Data Engineer and Analyst for clients across USA, Europe, Brazil, Australia, Japan, S. Korea and India.</li>
-              <li>Lead teams on Business Intelligence Projects using PowerBI, Tableau, Python and SQL.</li>
-              <li>Worked on automation of tasks using Python, reducing the daily latency and manual dependency, saving 66% in costs.</li>
-              <li>Organized internal and team level projects and tasks using JIRA, Sheets and Excel</li>
-              <li>Mentored freshers on internal Data Science projects specializing in Tableau for BI and Python for webscraping and automation.</li>
-              <li>Worked on System Design and Business Requirement Documentations for all internal and client projects.</li>
-            </ul>
-          </p>
+    <!-- ---------------------------PROJECTS--------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <!--B.I and Data Science-->
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Data Science</h2>
+                    <p>A Collection of personal data science projects using PowerBI and Python.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <!--Websites-->
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Websites</h2>
+                    <p>A Collection of personal websites.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <!--UDEMY Courses-->
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>UDEMY Courses</h2>
+                    <p>A Public Repository of all my UDEMY courses completed/work in progress.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
         </div>
-        <div class="feature col">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-            <img src="./images/q.png" class="bi" width="80px" height="80px">
-          </div>
-          <h3 class="fs-2 text-body-emphasis">Quantiphi Analytics</h3>
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <h4 class="fs-5">Framework Engineer Intern</h4>
-          <small class="opacity-50 text-nowrap">[Feb'21-Aug'21]</small>
-          </div>
-          <p class="mb-0 opacity-75">
-            <ul>
-              <li>Worked in internal Data Science projects using Tableau and Python.</li>
-              <li>Prepared BI Dashboards for clients in USA using Tableau.</li>
-              <li>Worked on System Design Documentations for client projects based in USA.</li>
-            </ul>
-          </p>
-        </div>
-        <div class="feature col">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-            <img src="./images/se.png" class="bi" width="40px" height="40px">
-          </div>
-          <h3 class="fs-2 text-body-emphasis">Schneider Electric</h3>
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <h4 class="fs-5">Student Intern</h4>
-          <small class="opacity-50 text-nowrap">[Jul'20-Aug'20]</small>
-          </div>
-          <p class="mb-0 opacity-75">
-            <ul>
-              <li>Worked on Powerpoint presentations on tasks in Blue Prism Automation tasks.</li>
-              <li>Worked on documentations using MS word and Google Docs.</li>
-            </ul>
-          </p>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <!--Projects-->
-  <section id="projects">
-    <div class="container px-4 py-5" id="hanging-icons">
-      <h2 class="pb-2 border-bottom">My Projects</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="col d-flex align-items-start">
-          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
-              <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-              <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z"/>
-            </svg>
-          </div>
-          <div>
-            <h3 class="fs-2 text-body-emphasis">Flash Cards -  Deutsch to English</h3>
-            <p>This is a flash card program in Python which can be used for learning new languages. The default system is Deutsch to English. Newer languages can be added as excel sheets and one has to only tinkter the excel name in the code to run the program.</p>
-            <a href="#" class="btn btn-primary">
-              Go to Github
-            </a>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
-              <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z"/>
-              <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z"/>
-            </svg>
-          </div>
-          <div>
-            <h3 class="fs-2 text-body-emphasis">Credit Card Analysis</h3>
-            <p>This is a PowerBI Project to analyse the credit card data from Kaggle. A simple analyis that uses the basic PowerBI functionalities to draw conclusions between the credit card usage and the various categories like Age, Gender, Marital Status, Education and more. This project does not intend to draw stereotypical conclusions, it is just basic analysis.</p>
-            <a href="#" class="btn btn-primary">
-              Go to Github
-            </a>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-filetype-py" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 11.85h1.6c.289 0 .533.06.732.179.201.117.355.276.46.477.105.201.158.427.158.677 0 .25-.054.476-.16.677-.106.199-.26.357-.464.474a1.452 1.452 0 0 1-.732.173H.79v1.342H0V11.85Zm2.06 1.714a.795.795 0 0 0 .085-.381c0-.227-.062-.4-.185-.521-.123-.122-.294-.182-.513-.182H.788v1.406h.66a.794.794 0 0 0 .374-.082.574.574 0 0 0 .238-.24Zm2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855l-1.339 2.464Z"/>
-            </svg>
-          </div>
-          <div>
-            <h3 class="fs-2 text-body-emphasis">Python Projects</h3>
-            <p>This is a repository of all my Python projects. Modules ranging from Pandas, NumPy, Matplotlib, Tkinter, Turtle, Selenium, APIs, OOPs and more can be found here.</p>
-            <a href="#" class="btn btn-primary">
-              Go to Github
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!--JS-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-  <!--Footer-->
-  <section id="footer">
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="#" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">Sanjay Prabhu Kunjibettu</span>
-        </div>
-    
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-              </svg>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </div>
-  </section>
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
 
-  <!--Bootstrap 5.3.0 CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
