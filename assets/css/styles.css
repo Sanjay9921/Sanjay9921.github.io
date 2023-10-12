@@ -38,6 +38,10 @@ nav{
     width: 140px;
 }
 
+.audio1{
+    width: 200px;
+}
+
 nav ul li{
     display: inline-block;
     list-style: none;
