@@ -18,12 +18,14 @@
         <div class="container">
             <nav>
                 <img src="images/new-logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
 
             <div class="header-text">
@@ -144,6 +146,7 @@
     <div id="contact">
         <div class="container">
             <div class="row">
+
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-envelope"></i> sanjay.prabhu1729@gmail.com</p>
@@ -155,22 +158,26 @@
                     </div>
                     <a href="images/Sanjay_Prabhu_K_CV.pdf" download class="btn btn2">Download CV</a>
                 </div>
+
                 <div class="contact-right">
-                    <form action="">
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message."></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+
+                    <span id="msg"></span>
                 </div>
             </div>
-            <div class="copyright">
-                <p>Copyright <span>&copy;</span> Sanjay Prabhu. </p>
-            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <span>&copy;</span> Sanjay Prabhu. </p>
         </div>
     </div>
 
     <!--JS-->
+    <!--Menubar-->
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -187,6 +194,41 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+    </script>
+
+    <!--SIDE MENU-->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"; //Opens Menu, positions itself at 0 with width being 200px
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px"; //Closes Menu, positions itself at -200px with width being 200px
+        }
+    </script>
+
+    <!--Google Form-->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyrDSK1wt-vExqv7xdQN7M14f2r2NLmBuyu-NdfKQmgy6TpA4jabryU1eiA2Jx37n6HUA/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => //console.log('Success!', response))
+            {
+                msg.innerHTML = "Your message has been sent!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
     </script>
 </body>
 </html>
