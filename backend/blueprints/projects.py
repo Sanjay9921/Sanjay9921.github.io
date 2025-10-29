@@ -10,6 +10,6 @@ def get_projects():
     projects_info = Project.query.all()
     if projects_info:
         return jsonify({
-            "projects": [{"project_name": p.name, "project_desc": p.description, "project_link": p.github_link} for p in projects_info]
+            "projects": [{"project_name": p.project_name, "project_desc": p.project_desc, "project_link": p.project_link} for p in projects_info]
         })
     return jsonify({"message": "Missing 'projects' information"}), 404

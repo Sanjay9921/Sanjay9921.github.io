@@ -11,7 +11,7 @@ def get_about():
     xp_info = Experience.query.all()
     if edu_info and xp_info:
         return jsonify({
-            "education": [{"edu_degree": e.degree, "edu_university": e.institution, "edu_years": e.years} for e in edu_info],
-            "experience": [{"xp_title": x.title, "xp_company": x.company, "xp_years": x.duration} for x in xp_info]
+            "education": [{"edu_degree": e.edu_degree, "edu_university": e.edu_university, "edu_place":e.edu_place, "edu_desc":e.edu_desc, "edu_years": e.edu_years} for e in edu_info],
+            "experience": [{"xp_title": x.xp_title, "xp_company": x.xp_company, "xp_place":x.xp_place, "xp_desc":x.xp_desc, "xp_years": x.xp_years} for x in xp_info]
         })
     return jsonify({"message": "Missing 'about' information"}), 404
