@@ -4,7 +4,7 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Virtual environment
+# Virtual environments
 venv/
 env/
 .venv/
@@ -16,18 +16,46 @@ env/
 # Flask instance folder (if used)
 instance/
 
-# Environment variables file
+# Environment variables files
 .env
 
-# PyCharm/IDE files
+# Editor directories and files
 .idea/
 .vscode/
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+archive/
 
 # Logs and temp files
 *.log
 *.tmp
 *.bak
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# Node modules (frontend)
+node_modules/
+
+# Build output directories (frontend)
+dist/
+dist-ssr
+build/
+*.local
+
+# npm pack files
+*.tgz

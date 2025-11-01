@@ -14,21 +14,25 @@
   --paragraph-color: #555;
 
   /* icons color */
-  --html-color: #e34c26;
-  --css-color: #264de4;
-  --java-script-color: #f1d01b;
   --react-color: #61dafb;
-  --redux-color: #764abc;
   --github-color: #000000;
+  --kaggle-color: #20BEFF;
   --git-color: #f05539;
   --java-color: #5382a1;
-  --cpp-color: #4caf50;
-  --facebook-color: #4267B2;
   --linked-in-color: #0077b5;
   --gmail-color: #c72923;
-  --type-script-color: #007acc;
-  --recoil-color: #3578e5;
-  --react-query-color: #f73f51;
+  --python-color: #4B8BBE;
+  --pytorch-color: #ee4c2c;
+  --postgresql-color: #336791;
+  --azure-color: #007FFF;
+  --powerbi-color: #F2C811;
+  --flask-color: #000000;
+  --postman-color: #EF5B25;
+  --opencv-color: #000000;
+  --databricks-color: #FF6A00 ;
+  --hgface-color: #FEE133;
+  --vscode-color:#007FFF;
+  --datacamp-color: #03EF62;
 }
 
 html {
