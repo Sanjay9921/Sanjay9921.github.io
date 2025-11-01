@@ -11,21 +11,6 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SiDatacamp } from "react-icons/si";
 
 function Home() {
-
-	const [homeData, setHomeData] = useState(null);
-
-    useEffect(() => {
-        fetch('http://localhost:5000/api/home/')
-            .then(response => response.json())
-            .then(data => setHomeData(data))
-            .catch(error => console.error('Error fetching home data:', error));
-    }, []);
-
-    if (!homeData) {
-        return <div>Loading...</div>; // or a loading spinner
-    }
-
-
   return (
     <>
 	<div id='Home' className={style.home}>
