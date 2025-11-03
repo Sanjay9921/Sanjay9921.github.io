@@ -52,7 +52,7 @@ Thumbs.db
 node_modules/
 
 # Build output directories (frontend)
-dist/
+# dist/
 dist-ssr
 build/
 *.local
