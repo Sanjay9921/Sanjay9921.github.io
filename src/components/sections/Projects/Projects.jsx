@@ -16,6 +16,8 @@ import AnimeRec from '../../../assets/images/anime.jpeg';
 import ClothingClassifier from '../../../assets/images/clothing.jpg';
 import FaceMask from '../../../assets/images/facemask.jpg';
 import Lidar from '../../../assets/images/lidar.jpg';
+import Spongebob from '../../../assets/images/spongebob.jpg';
+import Leo from '../../../assets/images/leo.jpg'
 
 function Projects() {
 
@@ -39,16 +41,28 @@ const projects = [
 		image: FaceMask
 	},
 	{
-		name: 'Datacamp Project Clothing Classifier',
-		github: 'https://github.com/Sanjay9921/DataCamp-Project-Clothing-Classifier',
-		description: 'Transform the retail industry with cutting-edge AI: develop an innovative clothing classification system to create a smarter, more efficient shopping experience. Leveraging machine learning, you’ll make it easier to find the perfect outfit among a variety of choices, opening up new possibilities in the rapidly evolving digital fashion world.',
-		image: ClothingClassifier
+		name: 'Anomaly Detection using Supervised Machine Learning',
+		github: 'https://github.com/Masterarbeit-MBM-HFT/Anomaly-Detection',
+		description: 'Sample repository of anomaly detection using supervised machine learning conducted for Master Thesis | HFT Stuttgart x Mercedes-Benz Mobility AG',
+		image: Spongebob
 	},
 	{
 		name: 'Context-Aware PDF Question Answering with LLMs',
 		github: 'https://github.com/Masterarbeit-MBM-HFT/Context-Aware-RAG-Chatbot',
-		description: 'This project is a context-aware question answering system built on top of large language models (LLMs). It allows users to upload PDF documents and then ask natural language questions about the document’s content. The system uses advanced embedding and retrieval techniques to provide accurate, contextually relevant answers.',
+		description: 'Sample repository of context-aware RAG based chatbot using open-source LLMs from Together AI for Master Thesis | HFT Stuttgart x Mercedes-Benz Mobility AG',
 		image: WallE
+	},
+	{
+		name: 'PowerBI LLM Benchmarking Dashboard',
+		github: 'https://github.com/Masterarbeit-MBM-HFT/LLM-Benchmarking',
+		description: 'Sample repository of a power bi dashboard designed to test benchmarking scores for the open-source LLMs used for Master Thesis | HFT Stuttgart x Mercedes-Benz Mobility AG',
+		image: Leo
+	},
+	{
+		name: 'Datacamp Project Clothing Classifier',
+		github: 'https://github.com/Sanjay9921/DataCamp-Project-Clothing-Classifier',
+		description: 'Transform the retail industry with cutting-edge AI: develop an innovative clothing classification system to create a smarter, more efficient shopping experience. Leveraging machine learning, you’ll make it easier to find the perfect outfit among a variety of choices, opening up new possibilities in the rapidly evolving digital fashion world.',
+		image: ClothingClassifier
 	},
 	{
 		name: 'Anime Recommendation Application using React and Django',
