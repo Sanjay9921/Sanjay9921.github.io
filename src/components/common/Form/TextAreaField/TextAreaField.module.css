@@ -1,0 +1,54 @@
+/* src/components/common/Form/TextAreaField/TextAreaField.module.css */
+
+.text-area-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.text-area-field > label {
+  color: #666666;
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  user-select: none;
+  text-transform: capitalize; /* Capitalize full label */
+}
+
+.text-area-field > textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #555555;
+  background-color: #f9f8f6; /* Soft beige background */
+  font-weight: 600;
+  font-size: 1rem;
+  resize: vertical; /* Allow user to resize vertically */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  min-height: 120px; /* Set a minimum height */
+}
+
+.text-area-field > textarea::placeholder {
+  color: #999999;
+  font-weight: 500;
+}
+
+/* Focus styles for accessibility */
+.text-area-field > textarea:focus {
+  border-color: var(--primary-main, #5e07cd);
+  box-shadow: 0 0 8px var(--primary-light, #7843e9);
+}
+
+/* Disabled state */
+.text-area-field > textarea:disabled {
+  background-color: #e6e6e6;
+  color: #999999;
+  cursor: not-allowed;
+}

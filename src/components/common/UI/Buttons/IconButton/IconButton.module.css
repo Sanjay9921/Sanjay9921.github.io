@@ -1,0 +1,52 @@
+/* src/components/common/UI/Buttons/IconButton/IconButton.module.css */
+
+.button {
+  margin: 0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  background-color: var(--primary-light);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--primary-main);
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 0.4s ease, opacity 0.4s ease;
+  white-space: nowrap;
+}
+
+.icon {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  transition: bottom 0.4s ease, opacity 0.4s ease;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.button:hover .text {
+  top: -20px;
+  opacity: 0;
+}
+
+.button:hover .icon {
+  bottom: 50%;
+  opacity: 1;
+}

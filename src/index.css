@@ -5,22 +5,25 @@
 }
 
 :root {
-  /* primary */
-  --primary-main: #5e07cd;
-  --primary-light: #7843e9;
-  --word-color: #333;
-  --title-color: #111;
-  --back-ground-color: #fafafa;
-  --paragraph-color: #555;
+  /* Theme: Elegant Minimalism */
+  --primary-main: #2e2e2e;       /* Charcoal */
+  --primary-light: #6c6c6c;      /* Soft Gray */
+  --word-color: #333333;
+  --title-color: #1a1a1a;
+  --background-color: #f5f1e9; /* Light beige */
+  --paragraph-color: #555555;
 
-  /* icons color */
-  --react-color: #61dafb;
+  /* Social Media Icon Colors */
   --github-color: #000000;
+  --gmail-color: #c72923;
+  --datacamp-color: #03EF62;
   --kaggle-color: #20BEFF;
+  --linkedin-color: #0077b5;
+
+  /* Skills Color */
+  --react-color: #61dafb;
   --git-color: #f05539;
   --java-color: #5382a1;
-  --linked-in-color: #0077b5;
-  --gmail-color: #c72923;
   --python-color: #4B8BBE;
   --pytorch-color: #ee4c2c;
   --postgresql-color: #336791;
@@ -32,20 +35,35 @@
   --databricks-color: #FF6A00 ;
   --hgface-color: #FEE133;
   --vscode-color:#007FFF;
-  --datacamp-color: #03EF62;
 }
 
 html {
   scroll-behavior: smooth;
-  /* overflow: hidden; */
+  scroll-padding-top: 70px; /* offset for fixed navbar if any */
 }
 
 body {
   font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--word-color, #333);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased; /* better font rendering */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   text-decoration: none;
+  color: var(--primary-main, #5e07cd);
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--primary-light, #7843e9);
+  outline: none;
 }
 
 ul {
@@ -54,31 +72,37 @@ ul {
   padding: 0;
 }
 
-/* media */
+/* Accessibility focus outline for keyboard navigation */
+a:focus-visible {
+  outline: 2px dashed var(--primary-main, #5e07cd);
+  outline-offset: 4px;
+}
+
+/* Media */
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 21px;
+  padding-right: 21px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Small */
+/* Small: up to 768px */
 @media (max-width: 768px) {
   .container {
     width: 750px;
   }
 }
 
-/* Medium */
-@media (max-width: 992px) {
+/* Medium: 769px up to 992px */
+@media (min-width: 769px) and (max-width: 992px) {
   .container {
     width: 970px;
   }
 }
 
-/* Large */
-@media (max-width: 1200px) {
+/* Large: 993px up to 1200px */
+@media (min-width: 993px) and (max-width: 1200px) {
   .container {
     width: 1170px;
   }

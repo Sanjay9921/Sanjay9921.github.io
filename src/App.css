@@ -1,0 +1,17 @@
+.app {
+  font-family: 'DM Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+  max-width: 1200px;      /* Limit content width for readability */
+  margin: 0 auto;         /* Center horizontally */
+  padding: 1.5rem 1rem;   /* Comfortable spacing around content */
+  background-color: var(--background-color);
+  color: var(--word-color, #333);
+  font-size: 16px;
+  line-height: 1.6;
+  box-sizing: border-box; /* Include padding in element width */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;      /* Ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+}

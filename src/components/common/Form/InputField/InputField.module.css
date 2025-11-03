@@ -1,0 +1,52 @@
+/* src/components/common/Form/InputField/InputField.module.css */
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.input-field > label {
+  color: #666666;
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  user-select: none;
+  text-transform: capitalize; /* Use capitalize for entire word */
+}
+
+.input-field > input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  color: #555555;
+  background-color: #f9f8f6; /* subtle warm beige */
+  font-weight: 600;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input-field > input::placeholder {
+  color: #999999;
+  font-weight: 500;
+}
+
+/* Focus state for accessibility */
+.input-field > input:focus {
+  border-color: var(--primary-main, #5e07cd);
+  box-shadow: 0 0 8px var(--primary-light, #7843e9);
+}
+
+/* Disable select */
+.input-field > input:disabled {
+  background-color: #e6e6e6;
+  color: #999999;
+  cursor: not-allowed;
+}

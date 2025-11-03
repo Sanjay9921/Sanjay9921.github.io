@@ -1,0 +1,117 @@
+/* src/components/common/Layout/Footer/Footer.module.css */
+
+.footer {
+    background-color: #121212; /* Darker black for depth */
+    color: white;
+    padding: 1rem 2rem; /* Use rem for consistent scaling */
+    font-family: 'DM Sans', sans-serif;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 4rem 4rem;
+    gap: 2rem;
+}
+
+.footer-info div:nth-child(1)>h3 {
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+}
+
+.footer-info div:nth-child(1)>p {
+    margin: 0;
+    color: #ddd;
+    line-height: 1.7;
+    max-width: 480px;
+    font-size: 1rem;
+}
+
+.social>h3 {
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+}
+
+.social>div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social>div>a {
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    background-color: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.copy-right {
+    padding: 2rem 0;
+    border-top: 1px solid #333;
+    color: #ccc;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.copy-right>span {
+    font-weight: 600;
+    color: #ccc;
+}
+
+.copy-right>span>a{
+    color: var(--primary-light);
+}
+
+/* Consolidated hover transitions */
+.github:hover,
+.linkedin:hover,
+.kaggle:hover,
+.datacamp:hover{
+  transition: background-color 0.3s ease, fill 0.3s ease;
+}
+
+.github:hover {
+    background-color: var(--github-color);
+    transition: .3s;
+}
+
+.linkedin:hover {
+    background-color: var(--linkedin-color);
+    transition: .3s;
+}
+
+.kaggle:hover{
+    background-color: var(--kaggle-color);
+    transition: .3s;
+}
+
+.datacamp:hover{
+    background-color: var(--datacamp-color);
+    transition: .3s;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 2rem;
+  }
+
+  .footer-info div:nth-child(1) > p {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+  
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0.5rem;
+    gap: 1.5rem;
+  }
+}
