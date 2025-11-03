@@ -21,7 +21,7 @@ function Contact() {
 		setLoading(true);
 
 		setTimeout(function () {
-			emailjs.sendForm('service_gjbmeus', 'template_qk6p0pa', form.current, 'HDMwz57k3xrihLg4J')
+			emailjs.sendForm('service_wvdbk5l', 'template_qk6p0pa', form.current, 'HDMwz57k3xrihLg4J')
 				.then((result) => {
 					e.target.name.value = '';
 					e.target.email.value = '';
@@ -36,7 +36,7 @@ function Contact() {
 	<div id='Contact' className={style.contact}>
 				<div className={style.container}>
 					<h2 className={style.title}>Contact</h2>
-					<p>Use the form below to get in touch with me.</p>
+					<p>Use the form below to send a message, looking forward to your message !</p>
 					<form
 						ref={form} onSubmit={sendEmail}
 						className={

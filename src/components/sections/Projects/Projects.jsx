@@ -63,7 +63,7 @@ const projects = [
 	<div id='Projects' className={style.projects}>
 		<div className={style.container}>
 			<h2 className={style.title}>Projects</h2>
-			<p>Professional and Academic Projects.</p>
+			<p>A list of professional and academic projects specializing in Deep Learning, Data Science, Generative AI and Full Stack.</p>
 			<div className={style["projects-list"]}>
 				{
 					projects.map((project, index) => {

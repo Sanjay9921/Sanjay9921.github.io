@@ -1,14 +1,19 @@
 /* src/components/sections/Contacts/Contact.module.css */
 
-.app {
-    font-family: sans-serif;
-    position: relative;
-}
-
 .contact {
     min-height: 100vh;
-    background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url(../assets/icons/back-ground.svg);
-    padding: 100px 0;
+    background-color: white;
+    padding-top: 100px;
+}
+
+.title {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 800;
+    color: var(--title-color);
+    margin-top: 0;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
 }
 
 .contact>.container>p {
